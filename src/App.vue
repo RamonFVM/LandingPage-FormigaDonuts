@@ -2,6 +2,7 @@
   <div id="app">
     <MyHeader />
     <MyBody/>
+    
   </div>
 </template>
 
