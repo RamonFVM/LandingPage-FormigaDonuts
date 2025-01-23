@@ -1,77 +1,110 @@
 <template>
-  <div>
-    <div ref="splide" class="splide">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li class="splide__slide" v-for="(item, index) in images" :key="index">
-            <img :src="item" alt="Imagem de Donut" class="image-size" />
-          </li>
-        </ul>
+  <div class="card-container">
+    <div v-for="(item, index) in cards" :key="index" class="card">
+      <img :src="item.image" alt="Imagem de Donut" class="card-image" />
+      <div class="card-content">
+      
+       
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Splide from '@splidejs/splide';
-import '@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
-
 export default {
   name: "DonutCard",
   data() {
     return {
-      images: [
-        require('@/assets/donut1.jpeg'),
-        require('@/assets/donut2.jpeg'),
-        require('@/assets/donut3.jpeg'),
-        require('@/assets/donut4.jpeg'),
-        require('@/assets/donut5.jpeg')
+      cards: [
+        {
+          image: require('@/assets/donut1.jpeg'),
+          title: 'Donut 1',
+          description: 'Descrição do Donut 1'
+        },
+        {
+          image: require('@/assets/donut2.jpeg'),
+          title: 'Donut 2',
+          description: 'Descrição do Donut 2'
+        },
+        {
+          image: require('@/assets/donut3.jpeg'),
+          title: 'Donut 3',
+          description: 'Descrição do Donut 3'
+        },
+        {
+          image: require('@/assets/donut4.jpeg'),
+          title: 'Donut 4',
+          description: 'Descrição do Donut 4'
+        },
+       
+        {
+          image: require('@/assets/donut6.jpeg'),
+          title: 'Donut 5',
+          description: 'Descrição do Donut 6'
+        },
+        {
+          image: require('@/assets/donut7.jpeg'),
+          title: 'Donut 5',
+          description: 'Descrição do Donut 7'
+        },
+        
+
+        
+        
       ]
     };
-  },
-  mounted() {
-    new Splide(this.$refs.splide, {
-      type       : 'fade',
-      heightRatio: 0.5,
-      autoplay  : true,
-      arrows    : true,
-      prevArrow : '<button class="splide__arrow splide__arrow--prev">←</button>',
-      nextArrow : '<button class="splide__arrow splide__arrow--next">→</button>',
-      pagination: true,
-      speed      : 500
-    }).mount();
   }
 };
 </script>
 
 <style scoped>
-.splide__arrow {
-  background-color: transparent;
-  border: none;
-  color: #000; 
-  font-size: 2rem; 
+.card-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 1rem;  
+  flex-wrap: wrap; 
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 10px;
-  cursor: pointer;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, border 0.3s ease;  
+  width: 250px; 
+  height: auto;  
 }
 
-.splide__arrow:hover {
-  color: #f44336;
+.card:hover {
+  transform: scale(1.05);  
+  border: 3px solid #ff007f;
 }
 
-.splide__pagination button {
-  background-color: #000; 
-}
-
-.splide__slide img {
+.card-image {
   width: 100%;
-  height: 200px; 
-  object-fit: cover; 
-}
-
-
-.image-size {
-  width: 100%;
-  height: 200px; 
+  height: 200px;
   object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  margin-top: 10px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
 }
 </style>

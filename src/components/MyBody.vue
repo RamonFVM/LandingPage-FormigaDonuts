@@ -4,7 +4,7 @@
     <div class="absolute inset-0 bg-cover bg-center filter blur-md" :style="{ backgroundImage: 'url(' + require('@/assets/background.jpeg') + ')' }"></div>
 
     <div class="flex justify-center items-center m-10 z-10">
-      <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-full">
+      <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-3/4">
         <p class="font-semibold text-2xl text-center space-y-4">
           <span class="hover:text-fuchsia-300 text-3xl font-bold">Olá, nós somos a <span class="text-fuchsia-500">Formiga Donuts</span> </span>
           <span class="hover:text-fuchsia-300">, Uma micro empresa dedicada à confecção e venda de mini cakes e donuts deliciosos.</span>
@@ -20,9 +20,9 @@
     </div>
 
     
-    <div class=" inset-0 flex justify-center items-center m-19 z-20">
-      <div class="w-full max-w-4xl px-4 rounded-lg overflow-hidden shadow-lg">
-        <div class="bg-white rounded-lg overflow-hidden shadow-lg p-4">
+    <div class="inset-0 flex justify-center items-center m-19 z-20 ">
+      <div class="w-full max-w-4xl px-4 rounded-lg overflow-hidden shadow-lg p-6 ">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-4">
           <DonutCard />
         </div>
       </div>
