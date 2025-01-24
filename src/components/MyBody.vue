@@ -19,13 +19,18 @@
       </div>
     </div>
 
-    
-    <div class="inset-0 flex justify-center items-center m-19 z-20 ">
-      <div class="w-full max-w-4xl px-4 rounded-lg overflow-hidden shadow-lg p-6 ">
-        <div class="bg-white rounded-2xl shadow-lg overflow-hidden p-4">
+    <div class="inset-0 flex justify-center items-center m-10 z-20">
+      <div class="w-full max-w-4xl px-4 rounded-lg overflow-hidden shadow-lg p-6">
+      
           <DonutCard />
-        </div>
       </div>
+    </div>
+
+  
+    <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-3/4 flex justify-center items-center m-10 z-10 mx-auto">
+       <p class="text-center font-bold text-2xl">
+        O preparo é feito com todo 
+       </p>
     </div>
   </div>
 </template>
@@ -42,14 +47,12 @@ export default {
 </script>
 
 <style scoped>
-
 .absolute {
   background-size: cover;
   background-position: center;
   filter: blur(8px); 
   z-index: -1; 
 }
-
 
 .w-full {
   max-width: 100%; 
@@ -58,7 +61,6 @@ export default {
 .max-w-4xl {
   max-width: 600px; 
 }
-
 
 .rounded-lg {
   border-radius: 15px; 
@@ -72,13 +74,11 @@ export default {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
-
 .donut-card-wrapper img {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 10px; 
-
 }
 
 @media (max-width: 768px) {

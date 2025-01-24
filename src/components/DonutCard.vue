@@ -57,54 +57,54 @@ export default {
 };
 </script>
 
-<style scoped>
-.card-container {
-  display: flex;
-  justify-content: center; 
-  align-items: center;
-  gap: 1rem;  
-  flex-wrap: wrap; 
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, border 0.3s ease;  
-  width: 250px; 
-  height: auto;  
-}
+  <style scoped>
+  .card-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem;  
+    flex-wrap: wrap; 
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, border 0.3s ease;  
+    width: 250px; 
+    height: auto;  
+  }
 
-.card:hover {
-  transform: scale(1.05);  
-  border: 3px solid #ff007f;
-}
+  .card:hover {
+    transform: scale(1.05);  
+    border: 3px solid #ff007f;
+  }
 
-.card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
 
-.card-content {
-  margin-top: 10px;
-}
+  .card-content {
+    margin-top: 10px;
+  }
 
-.card-title {
-  font-size: 1.2rem;
-  font-weight: bold;
-}
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 
-.card-description {
-  font-size: 1rem;
-  color: #555;
-}
-</style>
+  .card-description {
+    font-size: 1rem;
+    color: #555;
+  }
+  </style>
