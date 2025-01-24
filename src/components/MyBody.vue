@@ -29,19 +29,23 @@
   
     <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-3/4 flex justify-center items-center m-10 z-10 mx-auto">
        <p class="text-center font-bold text-2xl">
-        O preparo é feito com todo 
+        O preparo é feito com todo os cuidados possiveis, para que você possa ter a melhor experiência possivel, espero que gostem do nossos produtos <br>
+        confira um pouco do que nos temos, e esperamos que você tenha um experiência sensacional.
        </p>
     </div>
+    <ListProducts/>
   </div>
 </template>
 
 <script>
 import DonutCard from './DonutCard.vue';  
+import ListProducts from './ListProducts.vue';
 
 export default {
   name: 'MyBody',
   components: {
     DonutCard, 
+    ListProducts
   },
 };
 </script>
