@@ -3,6 +3,7 @@
   
     <div class="absolute inset-0 bg-cover bg-center filter blur-md" :style="{ backgroundImage: 'url(' + require('@/assets/background.jpeg') + ')' }"></div>
 
+
     <div class="flex justify-center items-center m-10 z-10">
       <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-3/4">
         <p class="font-semibold text-2xl text-center space-y-4">
@@ -19,21 +20,20 @@
       </div>
     </div>
 
-    <div class="inset-0 flex justify-center items-center m-10 z-20">
+  
+    <div class="inset-0 flex justify-center items-center m-4 z-20">
       <div class="w-full max-w-4xl px-4 rounded-lg overflow-hidden shadow-lg p-6">
-      
-          <DonutCard />
+        <DonutCard />
       </div>
     </div>
 
-  
-    <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-3/4 flex justify-center items-center m-10 z-10 mx-auto">
-       <p class="text-center font-bold text-2xl">
-        O preparo é feito com todo os cuidados possiveis, para que você possa ter a melhor experiência possivel, espero que gostem do nossos produtos <br>
-        confira um pouco do que nos temos, e esperamos que você tenha um experiência sensacional.
-       </p>
+    <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-3/4 flex justify-center items-center m-0 z-10 mx-auto">
+      <p class="text-center font-bold text-2xl">
+        O preparo é feito com todo os cuidados possíveis, para que você possa ter a melhor experiência possível, espero que gostem dos nossos produtos! <br />
+        Confira um pouco do que temos e esperamos que você tenha uma experiência sensacional.
+      </p>
     </div>
-    <ListProducts/>
+    <ListProducts class="mt-0" /> 
   </div>
 </template>
 
