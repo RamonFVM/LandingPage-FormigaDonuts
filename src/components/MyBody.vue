@@ -27,7 +27,7 @@
       </div>
     </div>
 
-    <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-3/4 flex justify-center items-center m-0 z-10 mx-auto">
+    <div class="bg-[#ffffd0] p-8 rounded-lg shadow-lg max-w-2xl w-1/4 flex justify-center items-center m-0  z-10 mx-auto">
       <p class="text-center font-bold text-2xl">
         O preparo é feito com todo os cuidados possíveis, para que você possa ter a melhor experiência possível, espero que gostem dos nossos produtos! <br />
         Confira um pouco do que temos e esperamos que você tenha uma experiência sensacional.
