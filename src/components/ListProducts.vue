@@ -102,14 +102,15 @@ table {
   z-index: 10;
 }
 
-th{
-  padding: 1rem;
+th {
+  padding: 2rem;
 }
+
 td {
   padding: 8px;
   text-align: left;
   border: 3px solid #d63faa;
-  background-color:#ffffd0;
+  background-color: #ffffd0;
 }
 
 ul {
@@ -125,7 +126,6 @@ li {
   font-size: 1.5rem;
   line-height: 1.8;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
 }
 
 th {
@@ -160,7 +160,6 @@ td {
   margin-left: 8px;
 }
 
-
 @media (max-width: 1024px) {
   table {
     width: 100%;
@@ -187,6 +186,11 @@ td {
 }
 
 @media (max-width: 768px) {
+  table {
+    width: 90%;  
+    margin: 0 auto;  
+  }
+
   th,
   td {
     padding: 4px;
@@ -217,6 +221,11 @@ td {
 }
 
 @media (max-width: 480px) {
+  table {
+    width: 85%;  
+    margin: 0 auto;
+  }
+
   th,
   td {
     padding: 2px;
