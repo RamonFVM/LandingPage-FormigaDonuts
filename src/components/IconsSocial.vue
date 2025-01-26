@@ -1,14 +1,23 @@
 <template>
     <div>
-      <!-- Botão para alternar a visibilidade do socialmidia -->
+      
       <button @click="toggleSocial" class="fixed-button">
         Clique aqui para visitar
       </button>
   
-      <!-- Exibe o componente 'socialmidia' com fundo borrado -->
+      
       <div v-if="Social" class="overlay">
         <div class="card">
-          <socialmidia />
+        
+          <a href="https://www.instagram.com/formiga_donuts/" target="_blank" class="fixed-icon instagram">
+            <span class="material-icons">instagram</span>
+          </a>
+  
+          <a href="https://wa.me/1234567890" target="_blank" class="fixed-icon whatsapp">
+            <span class="material-icons">whatsapp</span>
+          </a>
+  
+      
           <button @click="toggleSocial" class="close-btn">Fechar</button>
         </div>
       </div>
@@ -16,19 +25,19 @@
   </template>
   
   <script>
-  import socialmidia from './socialmidia.vue';
+  
   
   export default {
     components: {
-      socialmidia
+     
     },
     data() {
       return {
-        Social: false,  // Começa com 'false', o componente não será mostrado
+        Social: false,  
       };
     },
     methods: {
-      // Alterna o valor de 'Social' para mostrar ou esconder o componente
+   
       toggleSocial() {
         this.Social = !this.Social;
       }
@@ -37,7 +46,7 @@
   </script>
   
   <style scoped>
-  /* Estilos para o botão fixo */
+ 
   .fixed-button {
     position: fixed;
     bottom: 20px;
@@ -58,22 +67,22 @@
     background-color: #f50057;
   }
   
-  /* Estilo para o fundo borrado */
+
   .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro */
-    backdrop-filter: blur(8px); /* Aplica o desfoque ao fundo */
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(8px); 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999; /* Garante que a sobreposição fique acima de outros conteúdos */
+    z-index: 999; 
   }
   
-  /* Estilos para o card centralizado */
+
   .card {
     background-color: white;
     padding: 20px;
@@ -85,7 +94,38 @@
     position: relative;
   }
   
-  /* Estilos para o botão de fechar */
+  
+  .fixed-icon {
+    position: relative;
+    bottom: 20px;
+    background-color: #ff4081;
+    padding: 15px;
+    border-radius: 16px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .instagram:hover {
+    background-color: #e1306c;
+  }
+  
+  .whatsapp:hover {
+    background-color: #25d366;
+  }
+  
+  .fixed-icon:hover {
+    transform: scale(1.1);
+  }
+  
+ 
   .close-btn {
     position: absolute;
     top: 10px;
@@ -94,7 +134,7 @@
     color: white;
     border: none;
     padding: 5px 10px;
-    border-radius: 50%;
+    border-radius: 30%;
     cursor: pointer;
   }
   
