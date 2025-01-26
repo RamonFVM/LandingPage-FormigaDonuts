@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center m-2 z-10 space-y-8">
-    <!-- Conteúdo Principal e Descrição -->
+   
     <div class="bg-[#ffffd0] p-6 sm:p-8 rounded-lg shadow-lg max-w-2xl w-3/4 sm:w-2/3 md:w-1/2">
       <p class="font-semibold text-xl sm:text-2xl text-center space-y-4">
         <span class="hover:text-fuchsia-300 text-3xl font-bold">Olá, nós somos a <span class="text-fuchsia-500">Formiga Donuts</span> </span>

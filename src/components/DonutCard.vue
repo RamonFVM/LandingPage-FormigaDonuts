@@ -30,7 +30,7 @@ export default {
 .card-container {
   position: relative;
   display: grid;  
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Ajuste para preencher a tela automaticamente */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  
   gap: 1rem; 
   width: 100%;
   justify-items: center;

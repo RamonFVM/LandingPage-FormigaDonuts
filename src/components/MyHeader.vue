@@ -1,5 +1,6 @@
 <template>
-  <div class="flex  bg-fuchsia-400 justify-center items-center m-0 p-8">
+  <div class="flex bg-[#d540a6] justify-center items-center m-0 p-8">
+    <a href=""></a>
     <img 
       :src="require('@/assets/background.jpeg')" 
       alt="imagem logo"
@@ -7,3 +8,9 @@
     />
   </div>
 </template>
+
+<script>
+ 
+
+
+</script>

@@ -88,23 +88,28 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;  
+  padding: 20px;  
   position: relative;
 }
 
 table {
-  width: 50%; 
+  width: 100%;  
+  max-width: 1200px; 
   border-collapse: collapse;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 20px 0;
   z-index: 10;
 }
 
-th,
+th{
+  padding: 1rem;
+}
 td {
   padding: 8px;
   text-align: left;
-  border: 1px solid #ddd;
+  border: 3px solid #d63faa;
+  background-color:#ffffd0;
 }
 
 ul {
@@ -120,6 +125,7 @@ li {
   font-size: 1.5rem;
   line-height: 1.8;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
 }
 
 th {
@@ -155,10 +161,15 @@ td {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  table {
+    width: 100%;
+    padding: 0 10px;
+  }
+
   th,
   td {
-    padding: 4px;
+    padding: 6px;  
   }
 
   .rotating-image {
@@ -167,22 +178,53 @@ td {
   }
 
   .text-sm {
-    font-size: 1rem; 
-  }
-
-  .text-lg {
     font-size: 1.2rem; 
   }
 
-  .w-full {
-    width: 100%; 
+  .text-lg {
+    font-size: 1.4rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  th,
+  td {
+    padding: 4px;
+  }
+
+  .rotating-image {
+    width: 20px;
+    height: 20px;
+  }
+
+  .text-sm {
+    font-size: 1rem;
+  }
+
+  .text-lg {
+    font-size: 1.2rem;
+  }
+
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  li {
+    font-size: 1rem; 
+    margin-right: 10px; 
   }
 }
 
 @media (max-width: 480px) {
   th,
   td {
-    padding: 2px; 
+    padding: 2px;
+  }
+
+  .rotating-image {
+    width: 18px;
+    height: 18px;
   }
 
   .text-sm {
@@ -191,6 +233,14 @@ td {
 
   .text-lg {
     font-size: 1.1rem;
+  }
+
+  ul {
+    flex-direction: column;  
+  }
+
+  li {
+    font-size: 0.9rem;  
   }
 }
 </style>
