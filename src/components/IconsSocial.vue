@@ -1,14 +1,11 @@
 <template>
     <div>
-     
       <button @click="toggleSocial" class="fixed-button">
         Clique aqui para visitar
       </button>
   
-   
       <div v-if="Social" class="overlay">
         <div class="card">
-         
           <a href="https://www.instagram.com/formiga_donuts/" target="_blank" class="fixed-icon instagram">
             <span class="material-icons">instagram</span>
           </a>
@@ -17,7 +14,6 @@
             <span class="material-icons">whatsapp</span>
           </a>
   
-         
           <button @click="toggleSocial" class="close-btn">X</button>
         </div>
       </div>
@@ -32,7 +28,6 @@
       };
     },
     methods: {
-    
       toggleSocial() {
         this.Social = !this.Social;
       }
@@ -41,7 +36,6 @@
   </script>
   
   <style scoped>
- 
   .fixed-button {
     position: fixed;
     bottom: 20px;
@@ -61,7 +55,6 @@
     background-color: #f50057;
   }
   
- 
   .overlay {
     position: fixed;
     top: 0;
@@ -76,19 +69,17 @@
     z-index: 999;
   }
   
-
   .card {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 60%;
+    width: 60%; 
     max-width: 500px;
     text-align: center;
     position: relative;
     overflow: hidden;
   }
-  
   
   .fixed-icon {
     position: relative;
@@ -102,7 +93,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 1000;
@@ -120,7 +111,6 @@
     transform: scale(1.1);
   }
   
-
   .close-btn {
     position: absolute;
     top: 10px;
@@ -131,13 +121,13 @@
     padding: 10px 20px;
     border-radius: 50%;
     cursor: pointer;
+    margin-top: 30px;
   }
   
   .close-btn:hover {
     background-color: #f50057;
   }
   
- 
   @media (max-width: 768px) {
     .fixed-button {
       width: 60%;
@@ -148,21 +138,22 @@
     }
   
     .card {
-      width: 80%;
-      padding: 20px;
+      width: 75%;  
+      padding: 30px; 
     }
   
     .fixed-icon {
-      padding: 15px;
-      font-size: 22px;
+      padding: 25px;
+      font-size: 28px;
+      margin: 25px;
     }
   
     .close-btn {
-      padding: 8px 16px;
+      padding: 12px 24px;
+      margin-top: 40px;
     }
   }
   
-
   @media (max-width: 480px) {
     .fixed-button {
       width: 70%;
@@ -173,17 +164,19 @@
     }
   
     .card {
-      width: 50%;
-      padding: 15px;
+      width: 85%; 
+      padding: 35px;
     }
   
     .fixed-icon {
-      padding: 12px;
-      font-size: 20px;
+      padding: 18px;
+      font-size: 26px;
+      margin: 30px;
     }
   
     .close-btn {
-      padding: 6px 12px;
+      padding: 8px 16px;
+      margin-top: 50px;
     }
   }
   </style>
