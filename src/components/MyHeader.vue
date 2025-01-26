@@ -1,5 +1,5 @@
 <template>
-  <div class="flex  bg-fuchsia-400 justify-center items-center m-0 p-14">
+  <div class="flex  bg-fuchsia-400 justify-center items-center m-0 p-8">
     <img 
       :src="require('@/assets/background.jpeg')" 
       alt="imagem logo"
